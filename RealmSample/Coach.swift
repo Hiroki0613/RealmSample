@@ -14,4 +14,6 @@ class Coach: Object {
     @objc dynamic var name: String = ""
     //コーチ歴(単位: 年)
     @objc dynamic var year: Int    = 1
+    
+    let owner = LinkingObjects(fromType: Team.self, property: "coach")
 }
