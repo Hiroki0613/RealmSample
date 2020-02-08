@@ -44,13 +44,39 @@ class ViewController: UIViewController {
         team.players.append(objectsIn: players)
 
 
-        print(players)
+//        print(players)
 //        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
         try! realm.write {
-            realm.add(team)
+            realm.add(players)
         }
         
+        //Player内のデータを取得
+//        let results = realm.objects(Player.self)
+//        print("hirohiroAll")
+//        print(results)
+        
+        //Player内のデータの数を取得
+//        print("hirohiroCount")
+//        print(results.count)
+//
+//        print("hirohiroProperty")
+//        print("氏名 = \(results[0].name)")
+//        print("身長 = \(results[0])")
+        
+//        let results = realm.objects(Player.self).filter("name == 'Steve'")
+//        print(results)
+        
+//        let predicate = NSPredicate(format: "name == %@", "Bill")
+//        let results = realm.objects(Player.self).filter(predicate)
+//        print(results)
+        
+//        let results = realm.objects(Player.self).filter("height >= 170").first
+//        print(results)
+        
+        
+        let results = realm.objects(Player.self).sorted(byKeyPath: "height", ascending: true)
+        print(results)
         
     }
     
