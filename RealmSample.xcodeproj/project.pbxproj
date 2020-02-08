@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		7F30F02E23EEA84200ACADB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F02C23EEA84200ACADB6 /* Main.storyboard */; };
 		7F30F03023EEA84300ACADB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F02F23EEA84300ACADB6 /* Assets.xcassets */; };
 		7F30F03323EEA84300ACADB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F03123EEA84300ACADB6 /* LaunchScreen.storyboard */; };
+		7F30F03B23EEABD800ACADB6 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30F03A23EEABD800ACADB6 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7F30F02F23EEA84300ACADB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F30F03223EEA84300ACADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F30F03423EEA84300ACADB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F30F03A23EEABD800ACADB6 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		AE105043455A7F99BCB0B653 /* Pods-RealmSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSample.release.xcconfig"; path = "Target Support Files/Pods-RealmSample/Pods-RealmSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +58,6 @@
 				6DB4C3892FC6C49115B6FAAD /* Pods-RealmSample.debug.xcconfig */,
 				AE105043455A7F99BCB0B653 /* Pods-RealmSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 				7F30F02623EEA84200ACADB6 /* AppDelegate.swift */,
 				7F30F02823EEA84200ACADB6 /* SceneDelegate.swift */,
 				7F30F02A23EEA84200ACADB6 /* ViewController.swift */,
+				7F30F03A23EEABD800ACADB6 /* Team.swift */,
 				7F30F02C23EEA84200ACADB6 /* Main.storyboard */,
 				7F30F02F23EEA84300ACADB6 /* Assets.xcassets */,
 				7F30F03123EEA84300ACADB6 /* LaunchScreen.storyboard */,
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F30F03B23EEABD800ACADB6 /* Team.swift in Sources */,
 				7F30F02B23EEA84200ACADB6 /* ViewController.swift in Sources */,
 				7F30F02723EEA84200ACADB6 /* AppDelegate.swift in Sources */,
 				7F30F02923EEA84200ACADB6 /* SceneDelegate.swift in Sources */,
