@@ -17,10 +17,13 @@ class ViewController: UIViewController {
     let player3 = Player()
     
     //Coachをインスタンス化
-    let coach = Coach()
+//    let coach = Coach()
     
     //Teamをインスタンス化
     let team = Team()
+    
+    //複数のPlayerリストをインスタンス化
+    let players = List<Player>()
     
     //Realmのインスタンス(実物)を作成
     let realm = try! Realm()
@@ -29,18 +32,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setCoach()
+//        setCoach()
         setTeam()
+        setPlayer()
+        
+        
+        players.append(player1)
+        players.append(player2)
+        players.append(player3)
+        
+        team.players.append(objectsIn: players)
 
 
-        print(player1)
-        print(player2)
-        print(player3)
-
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        print(players)
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
         try! realm.write {
             realm.add(team)
+        }
+        
+        
     }
     
     
@@ -56,26 +67,25 @@ class ViewController: UIViewController {
         player2.height = 175.2
         player2.weight = 65.3
         player2.memo   = "creator"
-
+        
         //player3のプロパティを入力
         player3.name   = "Tim"
         player3.height = 178.0
         player3.weight = 62.3
         player3.memo   = "CEO"
         
-
-        }
     }
     
-    func setCoach(){
-        coach.name = "Jhon"
-        coach.year = 3
-    }
+//    func setCoach(){
+//        coach.name = "Jhon"
+//        coach.year = 3
+//    }
     
     func setTeam(){
         team.id   = 1
         team.name = "Bulls"
-        team.coach = coach
+//        team.coach = coach
+
     }
     
     
