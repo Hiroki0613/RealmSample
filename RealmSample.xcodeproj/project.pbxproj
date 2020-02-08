@@ -15,6 +15,8 @@
 		7F30F03023EEA84300ACADB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F02F23EEA84300ACADB6 /* Assets.xcassets */; };
 		7F30F03323EEA84300ACADB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F03123EEA84300ACADB6 /* LaunchScreen.storyboard */; };
 		7F30F03B23EEABD800ACADB6 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30F03A23EEABD800ACADB6 /* Team.swift */; };
+		7F30F03D23EEAFA900ACADB6 /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30F03C23EEAFA900ACADB6 /* Coach.swift */; };
+		7F30F03F23EEB08800ACADB6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F30F03E23EEB08800ACADB6 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		7F30F03223EEA84300ACADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F30F03423EEA84300ACADB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F30F03A23EEABD800ACADB6 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		7F30F03C23EEAFA900ACADB6 /* Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
+		7F30F03E23EEB08800ACADB6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		AE105043455A7F99BCB0B653 /* Pods-RealmSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSample.release.xcconfig"; path = "Target Support Files/Pods-RealmSample/Pods-RealmSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,8 @@
 				7F30F02823EEA84200ACADB6 /* SceneDelegate.swift */,
 				7F30F02A23EEA84200ACADB6 /* ViewController.swift */,
 				7F30F03A23EEABD800ACADB6 /* Team.swift */,
+				7F30F03C23EEAFA900ACADB6 /* Coach.swift */,
+				7F30F03E23EEB08800ACADB6 /* Player.swift */,
 				7F30F02C23EEA84200ACADB6 /* Main.storyboard */,
 				7F30F02F23EEA84300ACADB6 /* Assets.xcassets */,
 				7F30F03123EEA84300ACADB6 /* LaunchScreen.storyboard */,
@@ -209,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F30F03D23EEAFA900ACADB6 /* Coach.swift in Sources */,
 				7F30F03B23EEABD800ACADB6 /* Team.swift in Sources */,
 				7F30F02B23EEA84200ACADB6 /* ViewController.swift in Sources */,
 				7F30F02723EEA84200ACADB6 /* AppDelegate.swift in Sources */,
+				7F30F03F23EEB08800ACADB6 /* Player.swift in Sources */,
 				7F30F02923EEA84200ACADB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
