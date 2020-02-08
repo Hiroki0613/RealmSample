@@ -15,6 +15,10 @@ class Team: Object {
     //各プロパティは@objc dynamic var をつけて宣言
     //チーム名
     @objc dynamic var name : String     = ""
+    //コーチ
+    @objc dynamic var coach: Coach?
+    //選手
+    let players = List<Player>()
     //作成日時
     @objc dynamic var createdDate: Date = NSDate() as Date
     //更新日時
