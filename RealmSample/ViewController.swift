@@ -11,25 +11,36 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
+    //Playerをインスタンス化
     let player1 = Player()
-    let player2 = Player(value: ["Steve", 175.2, 65.3, "creator"])
+    let player2 = Player()
     let player3 = Player()
+    
+    //Coachをインスタンス化
+    let coach = Coach()
+    
+    //Teamをインスタンス化
+    let team = Team()
     
     //Realmのインスタンス(実物)を作成
     let realm = try! Realm()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setPlayer()
-        
 
-     
+        setTeam()
+        setCoach()
+
         print(player1)
         print(player2)
         print(player3)
-        
+
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+
+        try! realm.write {
+            realm.add(team)
     }
     
     
@@ -40,17 +51,39 @@ class ViewController: UIViewController {
         player1.weight = 54.5
         player1.memo   = "genius"
         
+        //player2のプロパティを入力
+        player2.name   = "Steve"
+        player2.height = 175.2
+        player2.weight = 65.3
+        player2.memo   = "creator"
+
         //player3のプロパティを入力
         player3.name   = "Tim"
         player3.height = 178.0
         player3.weight = 62.3
         player3.memo   = "CEO"
         
-        try! realm.write {
-            realm.add(player1)
+
         }
     }
     
+    func setCoach(){
+        coach.name = "Jhon"
+        coach.year = 3
+    }
     
+    func setTeam(){
+        team.id   = 1
+        team.name = "Bulls"
+        team.coach = coach
+    }
+    
+    
+    @IBAction func deleteRealmData(_ sender: Any) {
+        
+        try! realm.write {
+            realm.deleteAll()
+        }
+    }
 }
 
