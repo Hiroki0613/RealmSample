@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        setTeam()
         setCoach()
+        setTeam()
+
 
         print(player1)
         print(player2)
